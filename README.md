@@ -30,3 +30,7 @@ The algorithm remains readable while running.
 
 ## License
 MIT License - free to use, modify, and experiment with.
+
+![1](https://github.com/user-attachments/assets/80c39a4a-3b72-495b-8aa2-f9542e1fdb3c)
+![2](https://github.com/user-attachments/assets/456e0b58-2f0f-4f34-81ad-e4b7676de9c6)
+![3](https://github.com/user-attachments/assets/2c42e93f-b281-41ed-882e-1654a3fe2ed1)
