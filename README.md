@@ -1,17 +1,53 @@
 ## Real-time Cellular Automata Playground
-An interactive, real-time procedural cave generation simulation built with
-cellular automata.
 
-This project is designed as a playground, not a one-click generator:
-rules can be modified live, reactions are visualized, and cave structures
-emerge step by step.
+An algorithm-driven cave generation system focused on producing natural-looking underground layouts using tunable parameters and reproducible results.
+This project explores how simple rules and noise-based processes can generate complex, game-ready environments suitable for 2D or top-down games.
 
-## Simulation Model
-- Grid-based cellular automata
-- Each cell is either wall or floor
-- Neighbor counts determine survival and birth
-- Rules are adjustable in real time
-- The focus is on emergent behavior, not fixed outcomes.
+## 🧠 Overview
+
+Procedural cave generation is commonly used in games to create large, explorable spaces without handcrafted level design.
+
+This project aims to:
+- Generate organic cave structures
+- Provide fine control over density, openness, and connectivity
+- Produce deterministic results via seeds
+- Visualize each generation step for iteration and tuning
+
+## ✨ Core Features
+
+- Noise-based cave generation
+- Configurable parameters for shape and density
+- Seed-based reproducibility
+- Step-by-step visual output
+- Lightweight and easy to extend
+
+## ⚙️ How It Works
+
+The system is built around a grid-based representation of the cave space.
+
+1. **Initial Noise Fill**  
+   The grid is initialized using random noise with a configurable fill ratio.
+
+2. **Cellular Automata Smoothing**  
+   Multiple simulation passes apply local neighborhood rules to smooth the cave structure and remove isolated artifacts.
+
+3. **Post-Processing**  
+   Optional cleanup steps improve connectivity and visual readability.
+
+Each stage is intentionally separated to allow easy experimentation and parameter tuning.
+
+## 🧩 Technical Highlights
+
+- Grid-based spatial representation
+- Cellular automata rules for local emergence
+- Deterministic generation using random seeds
+- Designed with gameplay integration in mind
+
+## 🤔 Why I Built This
+
+I built this project to explore how simple procedural rules can lead to rich, emergent structures that feel handcrafted while remaining fully algorithmic.
+
+The goal was not only to generate caves, but to better understand how procedural systems can support gameplay, exploration, and replayability.
 
 ## Controls
 - SPACE = Pause / Resume
@@ -20,13 +56,6 @@ emerge step by step.
 - ← / → = Adjust survival threshold
 - H = Toggle Heatmap
 - R = Reset Grid
-
-## Visualization
-- Smooth state transitions
-- Birth / death reaction highlighting
-- Debug-friendly rendering
-
-The algorithm remains readable while running.
 
 ## License
 MIT License - free to use, modify, and experiment with.
