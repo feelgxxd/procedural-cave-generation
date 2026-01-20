@@ -4,11 +4,6 @@ class CaveRule:
         self.death_threshold = death_threshold
 
     def apply(self, is_wall, wall_neighbors):
-        """
-        Returns new cell state:
-        1 = wall
-        0 = empty
-        """
         if wall_neighbors < self.death_threshold:
             return 0
         return 1
