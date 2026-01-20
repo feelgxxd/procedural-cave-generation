@@ -23,10 +23,6 @@ BRUSH_COLOR = (200, 220, 255)
 
 show_heatmap = False
 
-'''recording = False
-frames = []
-MAX_FRAMES = 60'''
-
 pygame.init()
 
 def heatmap_color(n):
@@ -96,11 +92,6 @@ while running:
 
             if event.key == pygame.K_h:
                 show_heatmap = not show_heatmap
-
-            '''if event.key == pygame.K_g:
-                recording = True
-                frames = []
-                print("GIF recording started")'''
 
     mouse_buttons = pygame.mouse.get_pressed()
 
@@ -177,23 +168,6 @@ while running:
                 (gy - EDIT_RADIUS) * CELL_SIZE
             )
         )
-
-    '''if recording:
-        data = pygame.surfarray.array3d(screen)
-        data = data.swapaxes(0, 1)
-        frame = Image.fromarray(data)
-        frames.append(frame)
-
-        if len(frames) >= MAX_FRAMES:
-            recording = False
-            frames[0].save(
-                "procedural_cave_simulation.gif",
-                save_all=True,
-                append_images=frames[1:],
-                duration=40,
-                loop=0
-            )
-            print("GIF saved as procedural_cave_simulation.gif")'''
 
     pygame.display.flip()
 
