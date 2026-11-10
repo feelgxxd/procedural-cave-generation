@@ -1,3 +1,5 @@
+<a href="https://github.com/feelgxxd"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/feelgxxd/feelgxxd/main/assets/banners/procedural-cave-generation-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/feelgxxd/feelgxxd/main/assets/banners/procedural-cave-generation-light.svg"><img alt="procedural-cave-generation, a feelgxxd tape" src="https://raw.githubusercontent.com/feelgxxd/feelgxxd/main/assets/banners/procedural-cave-generation-dark.svg" width="100%"></picture></a>
+
 ## Real-time Cellular Automata Playground
 
 An algorithm-driven cave generation system focused on producing natural-looking underground layouts using tunable parameters and reproducible results.
